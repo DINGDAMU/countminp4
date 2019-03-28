@@ -368,8 +368,9 @@ control ingress {
     }
 
     if (custom_metadata.count_min > THRESHOLD){ 
-        apply(read_hh);
-        apply(update_hh);
+            apply(read_hh);
+        if (heavy_hitter.count < custom_metadata.count_min){
+            apply(update_hh);
         }
     }
 
