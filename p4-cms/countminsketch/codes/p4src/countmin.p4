@@ -373,6 +373,7 @@ control ingress {
             apply(update_hh);
         }
     }
+}
 
 control egress {
     apply(send_frame);
