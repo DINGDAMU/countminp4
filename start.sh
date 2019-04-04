@@ -116,4 +116,4 @@ cd ..
 cd ..
  
 # 最后获得p4 tutorials
-git clone https://github.com/p4lang/tutorials
+#git clone https://github.com/p4lang/tutorials
