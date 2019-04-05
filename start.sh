@@ -58,7 +58,7 @@ sudo pip install grpcio
 # 安装BMv2的依赖，下面PI编译时会用到。
 git clone https://github.com/p4lang/behavioral-model.git
 cd behavioral-model
-#git checkout ${BMV2_COMMIT}
+git checkout ${BMV2_COMMIT}
 # From bmv2's install_deps.sh, we can skip apt-get install.
 # Nanomsg is required by p4runtime, p4runtime is needed by BMv2...
 tmpdir=`mktemp -d -p .`
